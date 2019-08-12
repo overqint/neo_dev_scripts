@@ -1,0 +1,4 @@
+until np-prompt --maxpeers=10; do
+    echo "np-prompt crashed with exit code $?.  Respawning.." >&2
+    sleep 1
+done
